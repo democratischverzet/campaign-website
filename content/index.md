@@ -1,28 +1,6 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: home
-
-hero:
-  name: 'Democratisch Verzet'
-  tagline: De Nederlandse democratie is kapot. Het is tijd dat we weer met elkaar in gesprek gaan. Doe je mee?
-  image:
-    src: /logo.png
-    alt: 'Democratisch Verzet'
-  actions:
-    - theme: brand
-      text: 💁 Wie zijn wij?
-      link: /over
-    - theme: alt
-      text: 💬 Ga in WhatsApp groep
-      link: https://democratischverzet.nl/whatsapp-invite
-
-features:
-  - title: '1️⃣ Onze democratie is kapot'
-    details: De politiek luistert niet naar ons en Nederland zit op slot.
-  - title: '2️⃣ Wij gaan weer naar elkaar luisteren'
-    details: We willen gehoord worden, dus gaan we met elkaar in gesprek.
-  - title: '3️⃣ Nederland is van ons allemaal'
-    details: Het is niet ok dat een klein groepje mensen de macht heeft.
+title: Democratisch Verzet
 ---
 
 ::action{buttonLabel="Wie zijn wij?" buttonIcon="mdi-info" buttonTo="/over" title="Democratisch Verzet" description="De Nederlandse democratie is kapot. Het is tijd dat we weer met elkaar in gesprek gaan. Doe je mee?"}

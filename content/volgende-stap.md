@@ -1,17 +1,6 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: home
-
-hero:
-  name: 'Bijna klaar...'
-  tagline: 'Ga in onze WhatsApp groep om op de hoogte te blijven van onze evenementen:'
-  image:
-    src: /logo.png
-    alt: 'Democratisch Verzet'
-  actions:
-    - theme: brand
-      text: 👉 Ga in WhatsApp groep
-      link: https://democratischverzet.nl/whatsapp-invite
+title: Bijna klaar...
 ---
 
 ::action{buttonLabel="Open WhatsApp" buttonIcon="mdi-whatsapp" buttonTo="https://democratischverzet.nl/whatsapp-invite" title="Bijna klaar..." description="Ga in onze WhatsApp groep om op de hoogte te blijven van onze evenementen:"}
