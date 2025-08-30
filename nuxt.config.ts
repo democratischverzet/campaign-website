@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -14,11 +15,12 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   runtimeConfig: {
+    cloudflareDatabaseID: '',
     public: {
-      posthogPublicKey: 'phc_ePWcvlGf6OZW3i4jh0OSthZpeqlyPcSDzqqknpM92MP',
-      posthogUIHost: 'https://eu.posthog.com',
-      posthogAPIHost: 'https://data.democratischverzet.nl',
-      posthogDefaults: '2025-05-24',
+      posthogPublicKey: '',
+      posthogUIHost: '',
+      posthogAPIHost: '',
+      posthogDefaults: '',
     },
   },
 
@@ -27,6 +29,15 @@ export default defineNuxtConfig({
     cloudflare: {
       deployConfig: true,
       nodeCompat: true,
+      wrangler: {
+        d1_databases: [
+          {
+            binding: 'DB',
+            database_name: process.env.NUXT_CLOUDFLARE_DATABASE_NAME || '',
+            database_id: process.env.NUXT_CLOUDFLARE_DATABASE_ID || '',
+          },
+        ],
+      },
     },
   },
 })
