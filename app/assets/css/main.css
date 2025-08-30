@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+@plugin "@tailwindcss/typography";
+
+:root {
+  font-size: 112.5%;
+
+  --ui-primary: var(--color-orange-600);
+  --ui-secondary: var(--color-blue-700);
+  --ui-success: var(--ui-color-success-500);
+  --ui-info: var(--ui-color-info-500);
+  --ui-warning: var(--ui-color-warning-500);
+  --ui-error: var(--ui-color-error-500);
+}
