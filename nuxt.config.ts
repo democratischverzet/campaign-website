@@ -33,6 +33,21 @@ export default defineNuxtConfig({
       deployConfig: true,
       nodeCompat: true,
       wrangler: {
+        vars: {
+          NUXT_CLOUDFLARE_DATABASE_ID:
+            process.env.NUXT_CLOUDFLARE_DATABASE_ID || '',
+          NUXT_CLOUDFLARE_DATABASE_NAME:
+            process.env.NUXT_CLOUDFLARE_DATABASE_NAME || '',
+          NUXT_PUBLIC_POSTHOG_PUBLIC_KEY:
+            process.env.NUXT_PUBLIC_POSTHOG_PUBLIC_KEY || '',
+          NUXT_PUBLIC_POSTHOG_UI_HOST:
+            process.env.NUXT_PUBLIC_POSTHOG_UI_HOST || '',
+          NUXT_PUBLIC_POSTHOG_API_HOST:
+            process.env.NUXT_PUBLIC_POSTHOG_API_HOST || '',
+          NUXT_PUBLIC_POSTHOG_DEFAULTS:
+            process.env.NUXT_PUBLIC_POSTHOG_DEFAULTS || '',
+        },
+
         d1_databases: [
           {
             binding: 'DB',
