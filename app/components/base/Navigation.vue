@@ -15,11 +15,11 @@ const open = ref(false)
         <UButton size="xl" variant="soft" icon="mdi-menu">Menu</UButton>
 
         <template #content>
-          <div class="max-w-96 w-11/12 space-y-6 py-10 pr-8 pl-2 overflow-y-scroll">
+          <div class="max-w-96 space-y-6 py-10 pr-8 pl-2 ">
 
             <div class="space-y-2">
               <div>
-                <NuxtLink to="/" class="font-bold text-secondary text-2xl" @click="open = false">Democratisch Verzet ✌️
+                <NuxtLink to="/" class="font-bold text-secondary text-xl" @click="open = false">Democratisch Verzet ✌️
                 </NuxtLink>
               </div>
 
@@ -47,17 +47,16 @@ const open = ref(false)
             <div class=" space-y-2">
               <UButton size="xl" icon="mdi-heart" to="/besluit-mee" block color="secondary" @click="open = false">
                 Besluit mee</UButton>
+              <UButton size="xl" icon="mdi-whatsapp" to="https://democratischverzet.nl/whatsapp-invite" block
+                color="secondary" target="_blank">
+                WhatsApp groep</UButton>
               <!-- <UButton size="xl" icon="mdi-euro" block color="secondary" to="/doneer" @click="open = false">Doneer
               </UButton> -->
             </div>
 
-            <UCard class="bg-orange-50 mt-12">
-              <div class="font-bold mb-2">Blijf op de hoogte</div>
-              <UButton size="lg" icon="mdi-whatsapp" block color="primary"
-                to="https://democratischverzet.nl/whatsapp-invite" target="_blank">Open WhatsApp</UButton>
-            </UCard>
 
-            <div class="flex gap-1 justify-center my-12">
+
+            <div class="flex gap-1 justify-center">
               <UButton size="lg" icon="bi-substack" to="https://democratischverzet.substack.com/" square variant="ghost"
                 color="neutral" target="_blank">
               </UButton>
