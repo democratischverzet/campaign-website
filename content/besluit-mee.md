@@ -2,6 +2,9 @@
 
 Nederland zit op slot. Maar samen krijgen we dingen gedaan. Er zijn heel veel verschillende manieren waarop jij kan bijdragen aan Democratisch Verzet. Iedereen die meedoet besluit mee hoe wij samen Nederland mooier gaan maken:
 
+::signup
+::
+
 ## 1️⃣ Ik wil meedoen
 
 Of je nou 5 minuten hebt of paar uur wil bijdragen aan de Nederlandse democratie, we hebben jou hulp heel hard nodig!

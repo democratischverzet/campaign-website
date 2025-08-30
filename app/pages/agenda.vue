@@ -6,6 +6,11 @@ onMounted(() => {
   tag.value = params.get("tag") || '';
 })
 
+// Set the page title
+useHead({
+  title: 'Agenda'
+})
+
 </script>
 
 <template>

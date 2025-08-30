@@ -15,7 +15,7 @@ const open = ref(false)
         <UButton size="xl" variant="soft" icon="mdi-menu">Menu</UButton>
 
         <template #content>
-          <div class="max-w-96 space-y-6 py-10 pr-8 pl-2 ">
+          <div class="max-w-96 space-y-4 sm:space-y-6 py-10 pr-8 pl-2 ">
 
             <div class="space-y-2">
               <div>
@@ -23,14 +23,17 @@ const open = ref(false)
                 </NuxtLink>
               </div>
 
-              <div>Onze democratie is kapot. Wij gaan weer naar elkaar luisteren. Nederland is van ons allemaal.</div>
+              <div>Onze democratie is kapot. Wij gaan weer naar elkaar luisteren. Nederland is
+                van ons allemaal.
+              </div>
             </div>
 
             <div class="space-y-2 w-full">
 
 
               <UButton size="xl" icon="mdi-info" to="/over" block variant="soft" color="secondary"
-                @click="open = false">Wie zijn
+                @click="open = false">
+                Wie zijn
                 wij?
               </UButton>
 
@@ -40,6 +43,9 @@ const open = ref(false)
 
               <UButton size="xl" icon="mdi-book" to="/handleidingen" block variant="soft" color="secondary"
                 @click="open = false">Handleidingen
+              </UButton>
+              <UButton size="xl" icon="mdi-euro" to="/doneer" block variant="soft" color="secondary"
+                @click="open = false">Doneer
               </UButton>
 
             </div>
