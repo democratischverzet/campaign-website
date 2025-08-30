@@ -4,7 +4,6 @@ const config = useRuntimeConfig()
 
 
 onMounted(() => {
-  console.log('Initializing PostHog with config:', config.public.posthogUIHost, config.public.posthogAPIHost)
   posthog.init(config.public.posthogPublicKey,
     {
       ui_host: config.public.posthogUIHost,
