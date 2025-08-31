@@ -46,9 +46,31 @@ Activist Handbook is een internationaal platform waar veranderaars van over de h
 
 ## Andere initiatieven
 
-- [Assemble UK](https://timetoassemble.org/jumpstart-democracy)
-- [House of the People](https://www.houseofthepeople.uk/)
+Welke andere iniatieven zijn er? Wat **[wat voegen wij toe](https://docs.google.com/document/d/1jKKJ9TSNR6orGs0gb_NAYBJbsvE8_Bi3bxRq6xtRCpQ/edit?tab=t.15e476y60thm)**?
+
+> Ken jij nog een ander goed initiatief? Bekijk onze [volledige stakeholder lijst](https://docs.google.com/spreadsheets/d/1JeI1uQP7H7HHEeBbWL8qNwn30vLbLNxNX5RTbqlf8VY/edit?gid=0#gid=0) en laat het ons weten als we nog iets hebben gemist: [contact@democratischverzet.nl](mailto:contact@democratischverzet.nl)
+>
+> Samen staan we sterker! Wil jij je aansluiten bij het bondgenoten netwerk van Democratisch Verzet? Neem [contact](/contact) met ons op.
+
+### Nederland
+
 - [Ministerie van de Toekomst](https://ministerievandetoekomst.nl/)
 - [De Nationale Luistercampagne](https://luistercampagne.nl/)
+- [Democratie voor de Toekomst](https://democratievoordetoekomst.nl/)
+- [Deep Canvassing Nederland](https://deepcanvassing.nl/)
+- [Bureau Burgerberaad](https://www.bureauburgerberaad.nl/)
+- [Ministerie van de Toekomst](https://ministerievandetoekomst.nl/)
+- [Voor Ons Nederland](http://vooronsnederland.nl/)
+- [Samen voor de Toekomst](https://samenvoordetoekomst.nl/)
+- [Nederlandse Democratie Coalitie](https://democratiecoalitie.nl/)
+- [Meer Democratie](https://www.meerdemocratie.nl/)
+- [Democratie Monitor](https://democratiemonitor.org/)
+- [De\*Beweging](https://debeweging.org/)
+
+### Verenigd Koninkrijk
+
+- [The Humanity Project](https://www.humanityproject.uk/)
+- [Assemble UK](https://timetoassemble.org/jumpstart-democracy)
+- [House of the People](https://www.houseofthepeople.uk/)
 
 ![Sticky notes](/img/sticky-notes-2.webp)
