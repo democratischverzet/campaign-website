@@ -17,6 +17,8 @@ Dit is waar wij heilig in geloven. Dit is de kern van wat ons bij elkaar brengt,
 2. **Wij gaan weer naar elkaar luisteren.** We willen gehoord worden, dus gaan we met elkaar in gesprek. We gaan weer leren samenwerken. Samen bepalen we hoe we Nederland mooier gaan maken.
 3. **Nederland is van ons allemaal.** Het is niet ok dat een klein groepje mensen de macht heeft. We gaan zo veel mogelijk verschillende mensen bij elkaar brengen. We laten ons niet tegen elkaar uitspelen. Want samen staan we sterker. We doen wat nodig is om échte verandering af te dwingen. Dat doen we met creatieve, ludieke, innovatieve en geweldloze acties.
 
+![Brainstorm](/img/brainstorm.webp)
+
 ## Onze 5 actieregels
 
 Zo voeren wij actie. Iedereen mag meedoen met onze acties. Maar je moet je wel houden aan onze actieregels. Zo kunnen we elkaar vertrouwen, en weten omstanders ook wat ze van ons kunnen verwachten.
@@ -50,3 +52,5 @@ Nederland is van ons allemaal. Jij mag mee besluiten. Leer meer over hoe jij mee
 
 ::signup
 ::
+
+![Gezellig](/img/gezellig.webp)

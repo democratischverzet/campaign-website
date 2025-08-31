@@ -37,3 +37,5 @@ Wil jij ook onderdeel zijn van de oplossing? Meld je aan, dan vertellen we je wa
 
 ::signup
 ::
+
+![Gezellig](/img/gezellig-2.webp)

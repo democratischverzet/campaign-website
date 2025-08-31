@@ -29,3 +29,5 @@ Ben je er nog niet helemaal uit? Dat is helemaal ok. Blijf op de hoogte van Demo
 
 ::signup
 ::
+
+![Etentje](/img/etentje.webp)
