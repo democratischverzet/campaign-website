@@ -1,6 +1,10 @@
 # Wie zijn wij? 💁
 
-Wij zijn een groep mensen die zich zorgen maken over de staat van de Nederlandse democratie. Nederland zit op slot, en daar willen wij wat aan doen.
+**Wij zijn een groep mensen die zich zorgen maken over de staat van de Nederlandse democratie. Nederland zit op slot.**
+
+**Grote problemen zoals de wooncrisis en de klimaatcrisis worden niet opgelost, of zelfs erger gemaakt door de politiek. Rijke mensen worden rijker en machtiger, en de rest mag er in stikken. En ondertussen vechten we elkaar allemaal de tent uit op social media.**
+
+**Daar willen wij wat aan doen. Wij gaan weer met elkaar in gesprek. Samen besluiten we hoe we ons land mooier gaan maken. Samen bouwen aan de democratie van de toekomst. Want Nederland is van ons allemaal.**
 
 ::signup
 ::
