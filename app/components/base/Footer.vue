@@ -130,8 +130,11 @@ const items = ref<NavigationMenuItem[][][]>([
 </script>
 
 <template>
-  <div class="p-8 mt-16 grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-    <UCard v-for="item in items" class="bg-neutral-50">
+  <div class="flex justify-center mt-20 mb-12">
+    <NuxtImg src="/img/logo.svg" width="200" height="200" alt="Democratisch Verzet logo" />
+  </div>
+  <div class="p-8 grid md:grid-cols-2 xl:grid-cols-4 gap-6  border-t-8 border-t-secondary bg-secondary-100">
+    <UCard v-for="item in items">
       <UNavigationMenu orientation="vertical" :items="item" />
     </UCard>
 

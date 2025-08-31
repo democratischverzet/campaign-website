@@ -4,7 +4,9 @@ const open = ref(false)
 </script>
 <template>
   <UContainer class="flex justify-between gap-4 p-4 items-center">
-    <NuxtLink id="nav-home" class="font-bold" to="/">Democratisch Verzet ✌️</NuxtLink>
+    <NuxtLink id="nav-home" class="font-bold flex items-center gap-6 leading-4 text-balance" to="/">
+      Democratisch Verzet ✌️
+    </NuxtLink>
     <div class="flex gap-2">
       <UButton id="nav-join" size="xl" icon="mdi-heart" to="/besluit-mee" class="max-md:hidden">Besluit mee</UButton>
       <UButton id="nav-whatsapp" size="xl" icon="mdi-whatsapp" to="https://democratischverzet.nl/whatsapp-invite"

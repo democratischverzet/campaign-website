@@ -9,6 +9,8 @@
 ::signup
 ::
 
+![Huiskamergesprek](/img/huiskamergesprek.webp)
+
 ## Onze 3 principes
 
 Dit is waar wij heilig in geloven. Dit is de kern van wat ons bij elkaar brengt, en ons motiveert om samen in actie te komen, ondanks onze verschillen. Iedereen die zich aansluit bij onze beweging onderschrijft deze principes:

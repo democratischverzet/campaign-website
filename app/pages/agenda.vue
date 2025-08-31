@@ -17,7 +17,8 @@ useHead({
 
   <!-- The container is now correctly set to a column direction -->
   <div
-    style="position: fixed; top: 90px; left: 0; width: 100%; height: calc(100% - 90px); display: flex; flex-direction: column;">
+    style="position: fixed; top: 90px; left: 0; width: 100%; height: calc(100% - 90px); display: flex; flex-direction: column;z-index:1"
+    class="agenda-page bg-neutral-50">
 
     <!-- This iframe will now grow vertically to fill the available space -->
     <iframe :src="`https://lu.ma/embed/calendar/cal-pTzFNGJnHUszRei/events?tag=${tag}`" width="100%" frameborder="0"
@@ -51,3 +52,8 @@ useHead({
 
 
 </template>
+<style>
+body:has(.agenda-page) {
+  overflow: hidden;
+}
+</style>

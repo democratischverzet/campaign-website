@@ -10,6 +10,8 @@ We hebben een uitgebreid plan geschreven. Het kost ongeveer 1 uur om te lezen. I
 
 ✌️ [**Lees onze strategie**](https://docs.google.com/document/d/1jKKJ9TSNR6orGs0gb_NAYBJbsvE8_Bi3bxRq6xtRCpQ/edit?tab=t.hn7ogcihlppc)
 
+![Sticky notes](/img/sticky-notes-1.webp)
+
 ## Organiseer een evenement
 
 Iedereen kan een evenement organiseren voor Democratisch Verzet. Organiseer bijvoorbeeld een huiskamergesprek. Dat kost maar 2 uurtjes, kan gewoon bij jou thuis, en je hoeft alleen maar een paar vrienden uit te nodigen.
@@ -27,6 +29,8 @@ Iedereen kan een evenement organiseren voor Democratisch Verzet. Organiseer bijv
 - [**Plekberaard**](https://tegentijd.nl/plekberaden-voor-de-toekomst/)
 - [**Burgerberaad**](https://www.bureauburgerberaad.nl/schoolberaad)
 - [**Schoolberaad**](https://www.bureauburgerberaad.nl/schoolberaad)
+
+![Sticky notes](/img/sticky-notes-3.webp)
 
 ## Onze huisstijl
 
@@ -46,3 +50,5 @@ Activist Handbook is een internationaal platform waar veranderaars van over de h
 - [House of the People](https://www.houseofthepeople.uk/)
 - [Ministerie van de Toekomst](https://ministerievandetoekomst.nl/)
 - [De Nationale Luistercampagne](https://luistercampagne.nl/)
+
+![Sticky notes](/img/sticky-notes-2.webp)

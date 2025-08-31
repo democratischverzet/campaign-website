@@ -16,7 +16,7 @@ Meld je aan om op de hoogte te blijven van het Democratisch Verzet.
 ::signup
 ::
 
-![Posters voorbeelden](/img/huiskamergesprek.webp)
+![Huiskamergesprek](/img/huiskamergesprek.webp)
 
 ## Onze democratie is kapot. Wat nu?
 
