@@ -21,7 +21,9 @@ Neem initiatief en breng mensen bij elkaar! Start bijvoorbeeld een online petiti
 
 Voel je je echt thuis bij Democratisch Verzet? Toon je toewijding door een vast aantal uur per week bij te dragen!
 
-👉 [**Bekijk de vacatures**](https://airtable.com/embed/apptnTq5FKTItnpIM/shrUUpwmqRVe0i9di)
+👉 [**Bekijk de vacatures**](/vacatures)
+
+> Wil je op een andere manier bijdragen? Neem contact met ons op: [contact@democratischverzet.nl](mailto:contact@democratischverzet.nl)
 
 ## Kijk nog even toe vanaf de zijlijn
 
