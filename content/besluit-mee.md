@@ -8,7 +8,7 @@ Nederland zit op slot. Maar samen krijgen we dingen gedaan. Er zijn heel veel ve
 ::action{buttonLabel="Bekijk agenda" buttonIcon="mdi-calendar" buttonTo="/agenda" title="1. Kom naar een evenement" description="De beste manier om ons te leren kennen is door naar een van onze evenementen te gaan:" hideLogo}
 ::
 
-::action{buttonLabel="Teken de petitie" buttonIcon="mdi-document-sign" buttonTo="/petities/geen-vertrouwen-in-politiek" title="2. Teken de petitie: Politieke partijen, stop kinderachtig geruzie" description="Wij zijn klaar met het kinderachtige geruzie in de politiek. Teken onze petitie en deel met zo veel mogelijk vrienden:" hideLogo}
+::action{buttonLabel="Teken de petitie" buttonIcon="mdi-document-sign" buttonTo="/petities/geen-vertrouwen-in-politiek" title="2. Teken de petitie: Politieke partijen, stop kinderachtig geruzie" description="Wij eisen deze verkiezingen dat alle politieke partijen fatsoenlijk met elkaar in gesprek gaan. Kom met échte oplossingen. Mooie praatjes zijn niet meer genoeg." hideLogo}
 ::
 
 ::action{buttonLabel="Open WhatsApp" buttonIcon="mdi-whatsapp" buttonTo="https://democratischverzet.nl/whatsapp-invite" title="3. Ga in onze WhatsApp groep" description="Ga in onze WhatsApp groep om op de hoogte te blijven van onze evenementen:" hideLogo}
