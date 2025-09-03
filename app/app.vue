@@ -37,7 +37,6 @@ onMounted(() => {
     url.search = ''
     window.history.replaceState({}, document.title, url.toString())
   }
-
 });
 
 

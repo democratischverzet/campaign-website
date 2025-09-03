@@ -5,19 +5,24 @@ Nederland zit op slot. Maar samen krijgen we dingen gedaan. Er zijn heel veel ve
 ::signup{id="mZQjrB" title="Blijf op de hoogte!" description="Meld je aan om op de hoogte te blijven van het Democratisch Verzet." }
 ::
 
-## 1️⃣ Ik wil meedoen
+::action{buttonLabel="Bekijk agenda" buttonIcon="mdi-calendar" buttonTo="/agenda" title="1. Kom naar een evenement" description="De beste manier om ons te leren kennen is door naar een van onze evenementen te gaan:" hideLogo}
+::
 
-Of je nou 5 minuten hebt of paar uur wil bijdragen aan de Nederlandse democratie, we hebben jou hulp heel hard nodig!
+::action{buttonLabel="Teken de petitie" buttonIcon="mdi-document-sign" buttonTo="/petities/geen-vertrouwen-in-politiek" title="2. Teken de petitie: wij hebben geen vertrouwen in politiek" description="Wij zijn klaar met het kinderachtige geruzie in de politiek. Teken onze petitie en deel met zo veel mogelijk vrienden:" hideLogo}
+::
 
-👉 [**Bekijk alle manieren om mee te doen**](https://airtable.com/embed/apptnTq5FKTItnpIM/shrqsqWLmVCoPdeIZ)
+::action{buttonLabel="Open WhatsApp" buttonIcon="mdi-whatsapp" buttonTo="https://democratischverzet.nl/whatsapp-invite" title="3. Ga in onze WhatsApp groep" description="Ga in onze WhatsApp groep om op de hoogte te blijven van onze evenementen:" hideLogo}
+::
 
-## 2️⃣ Ik wil iets organiseren
+## Doe meer
+
+### Ik wil iets organiseren
 
 Neem initiatief en breng mensen bij elkaar! Start bijvoorbeeld een online petitie of organiseer een evenement.
 
 👉 [**Neem iniatief**](https://airtable.com/embed/apptnTq5FKTItnpIM/shrQsAFURm6hZUjhV/tblaKMt8NOJ2VO1wQ)
 
-## 3️⃣ Vacatures
+### Vacatures
 
 Voel je je echt thuis bij Democratisch Verzet? Toon je toewijding door een vast aantal uur per week bij te dragen!
 

@@ -5,12 +5,14 @@ const props = defineProps<{
   buttonLabel: string
   buttonTo: string
   buttonIcon?: string
+  hideLogo?: boolean
 }>()
 </script>
 <template>
-  <UCard class="bg-secondary-100">
-    <div class="md:flex md:flex-row-reverse items-center max-md:text-center max-md:pb-6">
-      <div class="flex-none md:px-8 max-md:flex max-md:justify-center">
+  <UCard class="bg-secondary-100 mb-8">
+    <div class="md:flex md:flex-row-reverse items-center max-md:text-center max-md:pb-6"
+      :class="{ 'max-md:pt-6': props.hideLogo }">
+      <div class="flex-none md:px-8 max-md:flex max-md:justify-center" v-if="!props.hideLogo">
         <NuxtImg src="/img/logo.svg" width="200" height="200" alt="Democratisch Verzet logo" />
       </div>
       <div class="flex-1 ">
