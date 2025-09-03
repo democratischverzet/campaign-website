@@ -16,5 +16,5 @@ We gaan zo veel mogelijk verschillende mensen bij elkaar brengen. We laten ons n
 
 Meld je aan om op de hoogte te blijven van het Democratisch Verzet.
 
-::signup
+::signup{id="mZQjrB" title="Blijf op de hoogte!" description="Meld je aan om op de hoogte te blijven van het Democratisch Verzet." }
 ::

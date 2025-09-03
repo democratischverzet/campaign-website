@@ -5,6 +5,7 @@ const config = useRuntimeConfig()
 const route = useRoute()
 
 onMounted(() => {
+
   posthog.init(config.public.posthogPublicKey,
     {
       ui_host: config.public.posthogUIHost,

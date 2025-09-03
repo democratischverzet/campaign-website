@@ -11,9 +11,11 @@ useSeoMeta({
 
 <template>
   <UContainer>
+    <!-- <ClientOnly> -->
     <ContentRenderer v-if="contentPage" :value="contentPage"
       class="my-12 mx-auto prose [&_h1_a]:no-underline [&_h2_a]:no-underline [&_h3_a]:no-underline [&_h4_a]:no-underline [&_h5_a]:no-underline [&_h6_a]:no-underline" />
     <div v-else>Page not found</div>
+    <!-- </ClientOnly> -->
 
   </UContainer>
 </template>

@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/scripts',
     '@nuxt/ui',
+    '@pinia/nuxt',
   ],
 
   css: ['~/assets/css/main.css'],
@@ -55,6 +56,12 @@ export default defineNuxtConfig({
             database_id: process.env.NUXT_CLOUDFLARE_DATABASE_ID || '',
           },
         ],
+        // kv_namespaces: [
+        //   {
+        //     binding: 'CACHE',
+        //     id: '',
+        //   },
+        // ],
       },
     },
   },

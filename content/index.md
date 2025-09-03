@@ -9,11 +9,7 @@ title: Democratisch Verzet
 ::demands
 ::
 
-## Blijf op de hoogte
-
-Meld je aan om op de hoogte te blijven van het Democratisch Verzet.
-
-::signup
+::signup{id="mZQjrB" title="Blijf op de hoogte!" description="Meld je aan om op de hoogte te blijven van het Democratisch Verzet." }
 ::
 
 ![Huiskamergesprek](/img/huiskamergesprek.webp)
@@ -31,11 +27,7 @@ Nederland is van ons allemaal. Het is niet ok dat een klein groepje mensen de ma
 ::people
 ::
 
-## Sluit je aan bij onze beweging
-
-Wil jij ook onderdeel zijn van de oplossing? Meld je aan, dan vertellen we je wat meer ove onze plannen!
-
-::signup
+::signup{id="mZQjrB" title="Sluit je aan bij onze beweging" description="Wil jij ook onderdeel zijn van de oplossing? Meld je aan, dan vertellen we je wat meer ove onze plannen!" }
 ::
 
 ![Gezellig](/img/gezellig-2.webp)

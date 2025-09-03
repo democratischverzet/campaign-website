@@ -2,7 +2,7 @@
 
 Nederland zit op slot. Maar samen krijgen we dingen gedaan. Er zijn heel veel verschillende manieren waarop jij kan bijdragen aan Democratisch Verzet. Iedereen die meedoet besluit mee hoe wij samen Nederland mooier gaan maken:
 
-::signup
+::signup{id="mZQjrB" title="Blijf op de hoogte!" description="Meld je aan om op de hoogte te blijven van het Democratisch Verzet." }
 ::
 
 ## 1️⃣ Ik wil meedoen
@@ -25,11 +25,7 @@ Voel je je echt thuis bij Democratisch Verzet? Toon je toewijding door een vast 
 
 > Wil je op een andere manier bijdragen? Neem contact met ons op: [contact@democratischverzet.nl](mailto:contact@democratischverzet.nl)
 
-## Kijk nog even toe vanaf de zijlijn
-
-Ben je er nog niet helemaal uit? Dat is helemaal ok. Blijf op de hoogte van Democratisch Verzet en leer meer over ons plan:
-
-::signup
+::signup{id="mZQjrB" title="Kijk nog even toe vanaf de zijlijn" description="Ben je er nog niet helemaal uit? Dat is helemaal ok. Blijf op de hoogte van Democratisch Verzet en leer meer over ons plan:" }
 ::
 
 ![Etentje](/img/etentje.webp)

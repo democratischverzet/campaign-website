@@ -6,7 +6,7 @@
 
 **Daar willen wij wat aan doen. Wij gaan weer met elkaar in gesprek. Samen besluiten we hoe we ons land mooier gaan maken. Samen bouwen aan de democratie van de toekomst. Want Nederland is van ons allemaal.**
 
-::signup
+::signup{id="mZQjrB" title="Blijf op de hoogte!" description="Meld je aan om op de hoogte te blijven van het Democratisch Verzet." }
 ::
 
 ![Huiskamergesprek](/img/huiskamergesprek.webp)
@@ -52,7 +52,7 @@ Nederland is van ons allemaal. Jij mag mee besluiten. Leer meer over hoe jij mee
 
 👉 [**Besluit mee!**](/besluit-mee)
 
-::signup
+::signup{id="mZQjrB" title="Blijf op de hoogte!" description="Meld je aan om op de hoogte te blijven van het Democratisch Verzet." }
 ::
 
 ![Gezellig](/img/gezellig.webp)
