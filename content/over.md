@@ -46,11 +46,8 @@ Zo werken wij samen. We houden ons allemaal aan onze 10 groepsafspraken:
 9. Verdeel macht eerlijk
 10. Verwelkom iedereen
 
-## Samen maken we Nederland mooier
-
-Nederland is van ons allemaal. Jij mag mee besluiten. Leer meer over hoe jij mee kan doen:
-
-👉 [**Besluit mee!**](/besluit-mee)
+::action{buttonLabel="Besluit mee" buttonIcon="mdi-heart" buttonTo="/besluit-mee" title="Samen maken we Nederland mooier" description="Nederland is van ons allemaal. Jij mag mee besluiten. Leer meer over hoe jij mee kan doen:"}
+::
 
 ::signup{id="mZQjrB" title="Blijf op de hoogte!" description="Meld je aan om op de hoogte te blijven van het Democratisch Verzet." }
 ::
