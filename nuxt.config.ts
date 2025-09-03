@@ -22,6 +22,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     // Private (server-only) runtime config
     cloudflareDatabaseID: '',
+    tallyApiKey: '',
 
     // Public runtime config automatically exposed to client
     public: {
