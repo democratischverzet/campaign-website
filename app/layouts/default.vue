@@ -1,6 +1,6 @@
 <template>
   <BaseNavigation />
-  <div>
+  <div class="min-h-screen">
     <slot />
   </div>
   <BaseFooter />

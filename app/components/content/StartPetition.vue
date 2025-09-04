@@ -9,7 +9,7 @@ onMounted(() => {
     <slot></slot>
     <iframe
       data-tally-src="https://tally.so/embed/mYAP5W?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-      loading="lazy" width="100%" height="351" frameborder="0" marginheight="0" marginwidth="0"
+      loading="lazy" width="100%" height="174.5" frameborder="0" marginheight="0" marginwidth="0"
       title="Start een petitie"></iframe>
   </div>
 </template>

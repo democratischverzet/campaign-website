@@ -22,6 +22,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     // Private (server-only) runtime config
     cloudflareDatabaseID: '',
+    cloudflareDatabaseName: '',
     tallyApiKey: '',
 
     // Public runtime config automatically exposed to client
@@ -40,10 +41,14 @@ export default defineNuxtConfig({
       nodeCompat: true,
       wrangler: {
         vars: {
+          // Private
           NUXT_CLOUDFLARE_DATABASE_ID:
             process.env.NUXT_CLOUDFLARE_DATABASE_ID || '',
           NUXT_CLOUDFLARE_DATABASE_NAME:
             process.env.NUXT_CLOUDFLARE_DATABASE_NAME || '',
+          NUXT_TALLY_API_KEY: process.env.NUXT_TALLY_API_KEY || '',
+
+          // Public
           NUXT_PUBLIC_POSTHOG_PUBLIC_KEY:
             process.env.NUXT_PUBLIC_POSTHOG_PUBLIC_KEY || '',
           NUXT_PUBLIC_POSTHOG_UI_HOST:

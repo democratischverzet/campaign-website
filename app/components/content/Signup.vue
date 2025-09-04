@@ -82,7 +82,7 @@ onMounted(() => {
       </p>
     </div>
 
-    <iframe :data-tally-src="getURL()" loading="lazy" width="100%" height="351" frameborder="0" marginheight="0"
+    <iframe :data-tally-src="getURL()" loading="lazy" width="100%" height="174.5" frameborder="0" marginheight="0"
       marginwidth="0" title="Onze democratie is kapot. Wat nu?"></iframe>
 
   </UCard>

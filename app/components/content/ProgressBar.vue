@@ -34,7 +34,7 @@ const nextGoal = computed(() => {
 </script>
 <template>
   <div class="mb-8 space-y-2">
-    <div class="flex justify-between items-center text-xl">
+    <div class="flex justify-between items-center md:text-xl">
       <div>
         Handtekeningen: {{ count }}
       </div>
