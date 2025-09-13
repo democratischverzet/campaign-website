@@ -31,6 +31,8 @@ Zo voeren wij actie. Iedereen mag meedoen met onze acties. Maar je moet je wel h
 4. We nemen geen vlaggen van politieke partijen of andere organisaties mee. We delen één duidelijke boodschap.
 5. We nemen verantwoordelijkheid voor onszelf, en we zijn allemaal deel van het team.
 
+![Etentje](/img/etentje-2.webp)
+
 ## Onze 10 groepsafspraken
 
 Zo werken wij samen. We houden ons allemaal aan onze 10 groepsafspraken:
