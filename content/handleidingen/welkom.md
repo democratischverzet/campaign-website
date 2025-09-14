@@ -85,6 +85,8 @@ Dit zijn de eerste 2 doelen die we willen bereiken:
 
 We kunnen deze twee doelen alleen bereiken als we politieke hokjes weten te overstijgen. Het maakt niet uit wat je stemt, of dat je helemaal niet stemt. Iedereen is welkom, iedereen is nodig.
 
+![Etentje](/img/etentje-2.webp)
+
 ## 8. We werken in fases
 
 We zijn nu in **fase 1** van ons plan: minstens 5 etentjes organiseren, kennismaken met zo veel mogelijk mensen, leren samenwerken en groeien als beweging. Dit is waar we de komende 2-3 maanden mee bezig zijn.
