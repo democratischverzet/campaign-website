@@ -1,6 +1,7 @@
-![Etentje](/img/koken.webp)
-
 # Welkom bij Democratisch Verzet! Dit zijn 10 dingen die jij moet weten als nieuwe verzetsheld ✌️
+
+::youtube{id="-F9ZmiaXeZc"}
+::
 
 ## 1. Wat is Democratisch Verzet?
 
@@ -18,7 +19,7 @@ De beste (en gezelligste!) manier om meer te leren over Democratisch Verzet is d
 
 👉 [Bekijk de agenda](/agenda)
 
-![Mette](/img/mette.webp)
+![Etentje](/img/koken.webp)
 
 ## 3. We schrijven handleidingen over alles wat we doen
 
@@ -32,7 +33,7 @@ Na ieder evenement vragen we ook altijd om feedback, zodat we onze handleidingen
 
 In onze agenda vind je ook evenementen van andere organisaties die zich inzetten voor een betere democratie. Want samen staan we sterker! En we hebben [een lijst](/handleidingen#andere-initiatieven) gemaakt van alle organisaties die zich inzetten voor een betere democratie in Nederland. Mis jij er nog een? Laat het ons weten!
 
-![Huiskamergesprek](/img/huiskamergesprek.webp)
+![Mette](/img/mette.webp)
 
 ## 5. We praten én komen in actie
 
@@ -63,6 +64,8 @@ We hebben mensen nodig die:
 - 💬 Echte netwerkers zijn
 
 En nog veel meer!
+
+![Huiskamergesprek](/img/huiskamergesprek.webp)
 
 ## 7. We hebben twee eerste doelen: een breed maatschappelijk gesprek & samen de democratie van de toekomst vormgeven
 
