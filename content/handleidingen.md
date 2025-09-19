@@ -19,6 +19,10 @@ Iedereen kan een evenement organiseren voor Democratisch Verzet. Organiseer bijv
 - 📖 [**Leer wat voor evenementen je kan organiseren**](https://airtable.com/embed/apptnTq5FKTItnpIM/shrQsAFURm6hZUjhV)
 - 📆 [**Voeg evenement toe aan het overzicht**](https://lu.ma/create?calendar=cal-pTzFNGJnHUszRei)
 
+### Etentje
+
+- [**Handleiding: Hoe host ik een etentje?**](/handleidingen/etentje)
+
 ### Huiskamergesprek
 
 - [**Mini-assembly**](https://docs.google.com/document/d/1TpSxdHgqyp5JpCdrxc3yotpsIPsyglhbmyj-WA338cY/edit?tab=t.0#heading=h.8w9ahkt1pbk4) ([Nederlandse versie](https://docs.google.com/document/d/1FhvgcJ0CM7t7DuC8WWqlXVY1GFkjnwYdzisaVnCq1lQ/edit?usp=sharing))

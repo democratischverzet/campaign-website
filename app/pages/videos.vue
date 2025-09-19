@@ -6,7 +6,10 @@ definePageMeta({ layout: 'fullscreen' })
 const videos = ref([
   { id: 'eeO0CG4MZGs' },
   { id: '58EbWx9ypoc' },
-  { id: 'L7i52ExS0QA' }
+  { id: 'L7i52ExS0QA' },
+  { id: 'rg7XksdzhUY' },
+  { id: 'eov7vpjuBnA' },
+
 ])
 
 // Refs for slide containers & player components

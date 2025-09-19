@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
   ],
 
+  // Global CSS files.
   css: ['~/assets/css/main.css'],
 
   ui: {
@@ -24,6 +25,8 @@ export default defineNuxtConfig({
     cloudflareDatabaseID: '',
     cloudflareDatabaseName: '',
     tallyApiKey: '',
+    loopsApiKey: '',
+    postcodeApiKey: '',
 
     // Public runtime config automatically exposed to client
     public: {
@@ -47,6 +50,8 @@ export default defineNuxtConfig({
           NUXT_CLOUDFLARE_DATABASE_NAME:
             process.env.NUXT_CLOUDFLARE_DATABASE_NAME || '',
           NUXT_TALLY_API_KEY: process.env.NUXT_TALLY_API_KEY || '',
+          NUXT_LOOPS_API_KEY: process.env.NUXT_LOOPS_API_KEY || '',
+          NUXT_POSTCODE_API_KEY: process.env.NUXT_POSTCODE_API_KEY || '',
 
           // Public
           NUXT_PUBLIC_POSTHOG_PUBLIC_KEY:
