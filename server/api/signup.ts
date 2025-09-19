@@ -68,15 +68,15 @@ export default defineEventHandler(async (event) => {
         data.street &&
         data.city &&
         data.province &&
-        data.geo?.latitude &&
-        data.geo?.longitude
+        data.geo?.lat &&
+        data.geo?.lon
       ) {
         return {
           street: data.street,
           city: data.city,
           province: data.province,
-          latitude: data.geo?.latitude,
-          longitude: data.geo?.longitude,
+          latitude: data.geo?.lat,
+          longitude: data.geo?.lon,
         }
       } else return null
     } catch (error) {
