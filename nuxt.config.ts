@@ -43,6 +43,10 @@ export default defineNuxtConfig({
       deployConfig: true,
       nodeCompat: true,
       wrangler: {
+        observability: {
+          enabled: true,
+          head_sampling_rate: 1,
+        },
         vars: {
           // Private
           NUXT_CLOUDFLARE_DATABASE_ID:

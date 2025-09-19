@@ -116,14 +116,14 @@ export default defineEventHandler(async (event) => {
       loopsProperties.mailingLists = mailingLists
     }
 
-    await loops.createContact(loopsProperties)
+    await loops.updateContact(loopsProperties)
 
     // Store contact in PostHog
     const posthog = new PostHog(config.posthogApiKey, {
       host: 'https://eu.i.posthog.com',
     })
 
-    await posthog.capture({
+    posthog.capture({
       distinctId: contactProperties.email,
       event: '$set',
       properties: {
@@ -141,7 +141,7 @@ export default defineEventHandler(async (event) => {
       })
 
       // Register event in PostHog
-      await posthog.capture({
+      posthog.capture({
         distinctId: contactProperties.email,
         event: `Server - ${body.eventName}`,
         properties: body.eventProperties,
