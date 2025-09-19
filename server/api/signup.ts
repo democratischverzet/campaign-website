@@ -119,7 +119,7 @@ export default defineEventHandler(async (event) => {
     await loops.updateContact(loopsProperties)
 
     // Store contact in PostHog
-    const posthog = new PostHog(config.posthogApiKey, {
+    const posthog = new PostHog(config.public.posthogPublicKey, {
       host: 'https://eu.i.posthog.com',
     })
 
