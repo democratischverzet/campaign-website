@@ -21,18 +21,27 @@ export default defineEventHandler(async (event) => {
 
   const body: Body = await readBody(event)
 
+  // Input validation
+  if (!body.contact.email || !body.contact.email.includes('@')) {
+    throw createError({
+      statusCode: 400,
+      statusMessage: 'Valid email is required',
+    })
+  }
+
+  if (!body.contact.postcode || !body.contact.houseNumber) {
+    throw createError({
+      statusCode: 400,
+      statusMessage: 'Postcode and house number are required',
+    })
+  }
+
   async function getAdressFromPostcodeAndNumber(
     postcode: string,
     houseNumber: string
   ) {
-    // Transform the house number
-    // - 12b4  -> 12
-    // - 12-14 -> 12
-    // - 12 A  -> 12
-    // - 12a -> 12
-    const cleanHouseNumber = houseNumber.replace(/[^0-9]/g, '').split('')[0]
-      ? houseNumber.match(/^\d+/)?.[0] || houseNumber
-      : houseNumber
+    // Transform the house number to extract just the numeric part
+    const cleanHouseNumber = houseNumber.match(/^\d+/)?.[0] || houseNumber
 
     const url = `https://postcode.tech/api/v1/postcode/full?postcode=${postcode}&number=${cleanHouseNumber}`
     const options = {
@@ -43,6 +52,16 @@ export default defineEventHandler(async (event) => {
 
     try {
       const response = await fetch(url, options)
+
+      if (!response.ok) {
+        console.error(
+          'Postcode API error:',
+          response.status,
+          response.statusText
+        )
+        return null
+      }
+
       const data = await response.json()
 
       if (
@@ -61,7 +80,7 @@ export default defineEventHandler(async (event) => {
         }
       } else return null
     } catch (error) {
-      console.error(error)
+      console.error('Error fetching address:', error)
       return null
     }
   }
@@ -78,57 +97,66 @@ export default defineEventHandler(async (event) => {
 
   // CONTACT
 
-  // Store contact in Loops
+  try {
+    // Store contact in Loops
+    const loops = new LoopsClient(config.loopsApiKey)
 
-  const loops = new LoopsClient(config.loopsApiKey)
+    const mailingLists = {
+      cmewv6u5y05eu0i2beb1t7hvp: true /* Subscribe */,
+      cmewz4mcn04g00i49193f5wot: true /* Subscribe */,
+    }
 
-  const mailingLists = {
-    cmewv6u5y05eu0i2beb1t7hvp: true /* Subscribe */,
-    cmewz4mcn04g00i49193f5wot: true /* Subscribe */,
-  }
-
-  let loopsProperties = {
-    email: contactProperties.email,
-    properties: contactProperties,
-    mailingLists: {},
-  }
-
-  if (contactProperties.optin) {
-    loopsProperties.mailingLists = mailingLists
-  }
-
-  await loops.createContact(loopsProperties)
-
-  // Store contact in PostHog
-  const posthog = new PostHog(config.posthogApiKey, {
-    host: 'https://eu.i.posthog.com',
-  })
-
-  posthog.capture({
-    distinctId: contactProperties.email,
-    event: '$set',
-    properties: {
-      $set: contactProperties,
-    },
-  })
-
-  // EVENT
-
-  if (body.eventName) {
-    // Register event in Loops
-    loops.sendEvent({
+    let loopsProperties = {
       email: contactProperties.email,
-      eventName: body.eventName,
-      eventProperties: body.eventProperties,
+      properties: contactProperties,
+      mailingLists: {},
+    }
+
+    if (contactProperties.optin) {
+      loopsProperties.mailingLists = mailingLists
+    }
+
+    await loops.createContact(loopsProperties)
+
+    // Store contact in PostHog
+    const posthog = new PostHog(config.posthogApiKey, {
+      host: 'https://eu.i.posthog.com',
     })
 
-    // Register event in PostHog
-    posthog.capture({
+    await posthog.capture({
       distinctId: contactProperties.email,
-      event: `Server - ${body.eventName}`,
-      properties: body.eventProperties,
+      event: '$set',
+      properties: {
+        $set: contactProperties,
+      },
+    })
+
+    // EVENT
+    if (body.eventName) {
+      // Register event in Loops
+      await loops.sendEvent({
+        email: contactProperties.email,
+        eventName: body.eventName,
+        eventProperties: body.eventProperties,
+      })
+
+      // Register event in PostHog
+      await posthog.capture({
+        distinctId: contactProperties.email,
+        event: `Server - ${body.eventName}`,
+        properties: body.eventProperties,
+      })
+    }
+
+    await posthog.shutdown()
+
+    // Return success response
+    return { success: true, message: 'Contact processed successfully' }
+  } catch (error) {
+    console.error('Error processing signup:', error)
+    throw createError({
+      statusCode: 500,
+      statusMessage: 'Failed to process signup',
     })
   }
-
-  await posthog.shutdown()
 })

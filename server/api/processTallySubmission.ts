@@ -3,7 +3,11 @@ export default defineEventHandler(async (event) => {
     key: string
     label: string
     type: string
-    value: string
+    value: string | string[]
+    options?: Array<{
+      id: string
+      text: string
+    }>
   }
 
   interface TallyFormResponse {
@@ -31,32 +35,55 @@ export default defineEventHandler(async (event) => {
   if (body.data.formName.includes('Interest')) trackEvent = 'Interest'
   if (body.data.formName.includes('Petition')) trackEvent = 'Petition'
 
+  // Find the optin field and determine if user opted in
+  const optinField = body.data.fields.find((field) => field.label === 'optin')
+  let optinValue = false
+
+  if (optinField && Array.isArray(optinField.value) && optinField.options) {
+    // Find the selected option and check if it's the "Yes" option
+    const selectedOptionId = optinField.value[0]
+    const selectedOption = optinField.options.find(
+      (option) => option.id === selectedOptionId
+    )
+    optinValue = selectedOption?.text.includes('Ja') || false
+  }
+
   const signupBody = {
     eventName: trackEvent,
     eventProperties: {},
     contact: {
       email:
-        body.data.fields.find((field) => field.key === 'email')?.value || '',
+        (body.data.fields.find((field) => field.label === 'E-mail adres')
+          ?.value as string) || '',
       firstName:
-        body.data.fields.find((field) => field.key === 'firstName')?.value ||
-        '',
+        (body.data.fields.find((field) => field.label === 'Voornaam')
+          ?.value as string) || '',
       phoneNumber:
-        body.data.fields.find((field) => field.key === 'phoneNumber')?.value ||
-        '',
+        (body.data.fields.find((field) => field.label === 'Telefoonnummer')
+          ?.value as string) || '',
       postcode:
-        body.data.fields.find((field) => field.key === 'postcode')?.value || '',
+        (body.data.fields.find((field) => field.label === 'Postcode')
+          ?.value as string) || '',
       houseNumber:
-        body.data.fields.find((field) => field.key === 'houseNumber')?.value ||
-        '',
-      optin:
-        body.data.fields.find((field) => field.key === 'optin')?.value ===
-        'Yes',
+        (body.data.fields.find((field) => field.label === 'Huisnummer')
+          ?.value as string) || '',
+      optin: optinValue,
     },
   }
 
   // Call the signup api
-  await $fetch('/api/signup', {
-    method: 'POST',
-    body: signupBody,
-  })
+  try {
+    await $fetch('/api/signup', {
+      method: 'POST',
+      body: signupBody,
+    })
+
+    return { success: true, message: 'Tally submission processed successfully' }
+  } catch (error) {
+    console.error('Error processing Tally submission:', error)
+    throw createError({
+      statusCode: 500,
+      statusMessage: 'Failed to process Tally submission',
+    })
+  }
 })
