@@ -14,8 +14,9 @@ const emit = defineEmits(['show'])
 
     <span
       class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75 translate-y-1/2"></span>
-    <UButton size="xs" square rounded class="rounded-full cursor-pointer  transition-transform translate-y-1/2"
-      variant="ghost" color="secondary" @click.stop="emit('show')">
+    <UButton size="xs" square rounded
+      class="rounded-full cursor-pointer hover:scale-120 transition-transform translate-y-1/2" variant="ghost"
+      color="secondary" @click.stop="emit('show')">
       <UAvatar :src size="md" class="border-white border-2" />
     </UButton>
   </div>

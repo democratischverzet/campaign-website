@@ -96,7 +96,7 @@ data.value?.coordinates.forEach((coordinate, index) => {
 const numberOfDots = performantDots.features.length
 
 
-let performantDotSize = 8
+let performantDotSize = 10
 
 if (numberOfDots > 5000) {
   performantDotSize = 2
@@ -152,7 +152,7 @@ onMounted(() => {
     ],
     container: 'map',
     cooperativeGestures: true,
-    // attributionControl: false // Hide attribution controls
+    attributionControl: false
   })
 
 
@@ -293,7 +293,7 @@ onMounted(() => {
 </script>
 <template>
   <div>
-    <div id="map" class="w-full" style="height: 60vh;"></div>
+    <div id="map" class="w-full rounded-md" style="height: 60vh;"></div>
 
     <!-- Hidden marker components that will be positioned on the map -->
     <div style="position: absolute; top: -9999px; left: -9999px;">
@@ -301,7 +301,17 @@ onMounted(() => {
         :src="testimonial.avatar" @show="openTestimonial(testimonial)" />
     </div>
 
-    <UCard class="text-xs text-gray-600 mt-4 bg-primary/10" variant="solid">
+    <div class="text-[10px] text-neutral-400 text-right "><a href="https://maplibre.org/" target="_blank"
+        class="no-underline text-neutral-400">MapLibre</a> |
+      <a href="https://openfreemap.org" target="_blank" class="no-underline text-neutral-400">OpenFreeMap</a> <a
+        href="https://www.openmaptiles.org/" target="_blank" class="no-underline text-neutral-400">© OpenMapTiles</a>
+      Data
+      from <a href="https://www.openstreetmap.org/copyright" target="_blank"
+        class="no-underline text-neutral-400">OpenStreetMap</a>
+    </div>
+
+
+    <UCard class="text-xs text-gray-600 mt-2 bg-primary/10" variant="solid">
       <div class="flex items-center gap-4 justify-between flex-wrap">
         <div class="flex items-center gap-4">
           <span class="relative flex size-3">
@@ -316,10 +326,9 @@ onMounted(() => {
         <!-- <UButton>Doe ook mee</UButton> -->
       </div>
 
-
-
-
     </UCard>
+
+
 
     <UModal v-model:open="isModalOpen">
       <template #title>
@@ -358,7 +367,8 @@ onMounted(() => {
 
         </div>
         <div class="space-y-4 p-6">
-          <div class="font-bold">Wat is jouw verhaal? Sluit je aan en ga in gesprek met andere verzetshelden:</div>
+          <div class="font-bold">Wat is jouw verhaal? Sluit je aan en ga in gesprek verzetshelden in {{
+            selectedTestimonial?.city }}:</div>
           <UButton size="xl" icon="mdi-whatsapp" to="https://democratischverzet.nl/whatsapp-invite" target="_blank">Ga
             in WhatsApp groep
           </UButton>

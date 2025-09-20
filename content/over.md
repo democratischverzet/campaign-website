@@ -9,7 +9,8 @@
 ::signup{id="mZQjrB" title="Blijf op de hoogte!" description="Meld je aan om op de hoogte te blijven van het Democratisch Verzet." }
 ::
 
-![Huiskamergesprek](/img/huiskamergesprek.webp)
+::map-people
+::
 
 ## Onze 3 principes
 
