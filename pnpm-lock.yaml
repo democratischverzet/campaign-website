@@ -62,6 +62,9 @@ importers:
       typescript:
         specifier: ^5.9.2
         version: 5.9.2
+      valibot:
+        specifier: ^1.1.0
+        version: 1.1.0(typescript@5.9.2)
       vue:
         specifier: ^3.5.20
         version: 3.5.20(typescript@5.9.2)

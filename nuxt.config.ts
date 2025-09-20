@@ -27,6 +27,7 @@ export default defineNuxtConfig({
     tallyApiKey: '',
     loopsApiKey: '',
     postcodeApiKey: '',
+    posthogPrivateKey: '',
 
     // Public runtime config automatically exposed to client
     public: {
@@ -56,6 +57,7 @@ export default defineNuxtConfig({
           NUXT_TALLY_API_KEY: process.env.NUXT_TALLY_API_KEY || '',
           NUXT_LOOPS_API_KEY: process.env.NUXT_LOOPS_API_KEY || '',
           NUXT_POSTCODE_API_KEY: process.env.NUXT_POSTCODE_API_KEY || '',
+          NUXT_POSTHOG_PRIVATE_KEY: process.env.NUXT_POSTHOG_PRIVATE_KEY || '',
 
           // Public
           NUXT_PUBLIC_POSTHOG_PUBLIC_KEY:

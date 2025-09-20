@@ -1,5 +1,6 @@
 import { PostHog } from 'posthog-node'
 import { LoopsClient } from 'loops'
+import * as v from 'valibot'
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig(event)
@@ -20,6 +21,21 @@ export default defineEventHandler(async (event) => {
   }
 
   const body: Body = await readBody(event)
+
+  // const BodySchema = v.object({
+  //   eventName: v.union([v.literal('Interest'), v.literal('Petition'), v.null()]),
+  //   eventProperties: v.object({
+  //     [key: string]: v.union([v.string(), v.number(), v.boolean()]),
+  //   }),
+  //   contact: v.object({
+  //     email: v.pipe(v.string(), v.email()),
+  //     firstName: v.string(),
+  //     phoneNumber: v.string(),
+  //     postcode: v.pipe(v.string(), v.minLength(6), v.maxLength(7)),
+  //     houseNumber: v.string(),
+  //     optin: v.boolean(),
+  //   }),
+  // })
 
   // Input validation
   if (!body.contact.email || !body.contact.email.includes('@')) {
@@ -91,6 +107,7 @@ export default defineEventHandler(async (event) => {
   )
 
   const contactProperties = {
+    // ...v.parse(ContactSchema, body.contact),
     ...body.contact,
     ...completeAddress,
   }
@@ -118,11 +135,12 @@ export default defineEventHandler(async (event) => {
 
     await loops.updateContact(loopsProperties)
 
-    // Store contact in PostHog
+    // Init PostHog
     const posthog = new PostHog(config.public.posthogPublicKey, {
       host: 'https://eu.i.posthog.com',
     })
 
+    // Store contact in PostHog
     posthog.capture({
       distinctId: contactProperties.email,
       event: '$set',
