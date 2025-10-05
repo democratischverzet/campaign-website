@@ -293,7 +293,7 @@ onMounted(() => {
 </script>
 <template>
   <div>
-    <div id="map" class="w-full rounded-md" style="height: 60vh;"></div>
+    <div id="map" class="w-full rounded-md" style="height: 65vh;"></div>
 
     <!-- Hidden marker components that will be positioned on the map -->
     <div style="position: absolute; top: -9999px; left: -9999px;">
@@ -301,8 +301,8 @@ onMounted(() => {
         :src="testimonial.avatar" @show="openTestimonial(testimonial)" />
     </div>
 
-    <div class="text-[10px] text-neutral-400 text-right "><a href="https://maplibre.org/" target="_blank"
-        class="no-underline text-neutral-400">MapLibre</a> |
+    <div class="text-[8px] leading-2 text-neutral-400 text-right mt-1 text-balance"><a href="https://maplibre.org/"
+        target="_blank" class="no-underline text-neutral-400">MapLibre</a> |
       <a href="https://openfreemap.org" target="_blank" class="no-underline text-neutral-400">OpenFreeMap</a> <a
         href="https://www.openmaptiles.org/" target="_blank" class="no-underline text-neutral-400">© OpenMapTiles</a>
       Data
@@ -311,19 +311,21 @@ onMounted(() => {
     </div>
 
 
-    <UCard class="text-xs text-gray-600 mt-2 bg-primary/10" variant="solid">
+    <UCard v-if="data?.newCount" class="text-xs text-gray-600 mt-3 bg-primary/10" variant="solid">
       <div class="flex items-center gap-4 justify-between flex-wrap">
         <div class="flex items-center gap-4">
           <span class="relative flex size-3">
             <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
             <span class="relative inline-flex size-3 rounded-full bg-primary"></span>
           </span>
-          <div>
+          <div v-if="data?.newCount > 2">
             <strong>{{ data?.newCount }} nieuwe verzetshelden</strong> hebben zich net aangesloten.
+          </div>
+          <div v-else-if="data?.newCount === 1">
+            <strong>{{ data?.newCount }} nieuwe verzetsheld</strong> heeft zich net aangesloten.
           </div>
 
         </div>
-        <!-- <UButton>Doe ook mee</UButton> -->
       </div>
 
     </UCard>
@@ -367,7 +369,7 @@ onMounted(() => {
 
         </div>
         <div class="space-y-4 p-6">
-          <div class="font-bold">Wat is jouw verhaal? Sluit je aan en ga in gesprek verzetshelden in {{
+          <div class="font-bold">Wat is jouw verhaal? Sluit je aan en ga in gesprek met verzetshelden in {{
             selectedTestimonial?.city }}:</div>
           <UButton size="xl" icon="mdi-whatsapp" to="https://democratischverzet.nl/whatsapp-invite" target="_blank">Ga
             in WhatsApp groep
